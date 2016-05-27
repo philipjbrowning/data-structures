@@ -1,0 +1,11 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "description": "Data structures built in JavaScript",
+  "main": "entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Philip J Browning II",
+  "license": "MIT"
+}
