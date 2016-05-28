@@ -8,6 +8,7 @@ exports.QueueLinkedList = function (MAX_SIZE) {
         front,
         size = 0;
 
+    // Time Complexity: O(1)
     this.DeQueue = function () {
         var newNode;
         if (size > 1) {
@@ -25,6 +26,7 @@ exports.QueueLinkedList = function (MAX_SIZE) {
         return newNode.data;
     };
 
+    // Time Complexity: O(1)
     this.EnQueue = function (data) {
         var newNode;
         if (size < MAX_SIZE) {
@@ -42,14 +44,17 @@ exports.QueueLinkedList = function (MAX_SIZE) {
         }
     };
 
+    // Time Complexity: O(1)
     this.Front = function () {
         return front.data;
     };
 
+    // Time Complexity: O(1)
     this.IsEmptyQueue = function () {
         return size === 0;
     };
 
+    // Time Complexity: O(1)
     this.QueueSize = function () {
         return size;
     };
