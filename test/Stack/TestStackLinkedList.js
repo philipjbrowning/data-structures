@@ -19,6 +19,14 @@ exports.TestStackLinkedList = function () {
             expect(myStack.isFullStack()).to.equal(false);
         });
 
+        it('deleteStack() should remove all nodes', function () {
+            myStack.push('A');
+            myStack.push('B');
+            myStack.push('C');
+            myStack.deleteStack();
+            expect(myStack.isEmptyStack()).to.equal(true);
+        });
+
         it('isFullStack() should be true if full, false if not', function () {
             expect(myStack.isFullStack()).to.equal(false);
             myStack.push('A');

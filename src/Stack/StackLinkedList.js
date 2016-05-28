@@ -7,18 +7,29 @@ exports.StackLinkedList = function (MAX_SIZE) {
         head = null,
         size = 0;
 
+    // Time Complexity: O(n)
+    this.deleteStack = function () {
+        while (head) {
+            this.pop();
+        }
+    };
+
+    // Time Complexity: O(1)
     this.isEmptyStack = function () {
         return size === 0;
     };
 
+    // Time Complexity: O(1)
     this.isFullStack = function () {
         return size === MAX_SIZE;
     };
 
+    // Time Complexity: O(1)
     this.length = function () {
         return size;
     };
 
+    // Time Complexity: O(1)
     this.pop = function () {
         var newNode;
 
@@ -32,6 +43,7 @@ exports.StackLinkedList = function (MAX_SIZE) {
         }
     };
 
+    // Time Complexity: O(1)
     this.push = function (data) {
         var newNode;
 
@@ -45,6 +57,7 @@ exports.StackLinkedList = function (MAX_SIZE) {
         }
     };
 
+    // Time Complexity: O(1)
     this.top = function () {
         return head.data;
     };
