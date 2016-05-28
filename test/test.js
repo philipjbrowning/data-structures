@@ -6,10 +6,11 @@ describe('Data Structures Built in JavaScript', function () {
 
     jsdom();
 
-    // Stack Implementations
+    // Stack Tests
     require('./Stack/TestStackLinkedList').TestStackLinkedList();
 
-    // Queue Implementations
+    // Queue Tests
+    require('./Queue/TestQueueLinkedList').TestQueueLinkedList();
 
 
 });
